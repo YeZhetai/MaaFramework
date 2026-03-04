@@ -162,7 +162,7 @@ struct LongPressParam
 struct SwipeParam
 {
     Target begin;
-    std::vector<TargetObj> end = { {} };
+    std::vector<TargetObj> end = { { } };
     std::vector<cv::Rect> end_offset;
     std::vector<uint> end_hold;
     std::vector<uint> duration = { 200 };
@@ -354,7 +354,7 @@ struct PipelineData
     bool enabled = true;
 
     Recognition::Type reco_type = Recognition::Type::DirectHit;
-    Recognition::Param reco_param = MAA_VISION_NS::DirectHitParam {};
+    Recognition::Param reco_param = MAA_VISION_NS::DirectHitParam { };
     bool inverse = false;
 
     Action::Type action_type = Action::Type::DoNothing;
